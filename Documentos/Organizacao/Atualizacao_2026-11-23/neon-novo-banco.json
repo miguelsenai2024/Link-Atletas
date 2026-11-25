@@ -1,0 +1,16 @@
+{
+  "database": "neondb",
+  "initiallyEmpty": true,
+  "migrations": [
+    "001_initial.sql",
+    "002_platform.sql",
+    "003_interactions.sql",
+    "004_billing.sql",
+    "005_billing_compatibility.sql",
+    "006_media_uploads.sql"
+  ],
+  "tableCount": 37,
+  "userCount": 0,
+  "seedExecuted": false,
+  "configured": true
+}

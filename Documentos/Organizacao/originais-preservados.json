@@ -1,0 +1,22 @@
+[
+  {
+    "origem": "Sprint 1/LinkAtletas_Documento_ERS_2026.pdf",
+    "destino": "Entregas/Sprint_1/Documentos/LinkAtletas_Documento_ERS_2026.pdf",
+    "sha256": "b49d79d04aa8af4ef8762076d417c5cef67b1d5004171c7ff73996111fe42752"
+  },
+  {
+    "origem": "Sprint 1/ANEXO_A_PROPOSTA_INICIAL_DEMANDA - LinkAtletas.pdf",
+    "destino": "Entregas/Sprint_1/Documentos/ANEXO_A_PROPOSTA_INICIAL_DEMANDA - LinkAtletas.pdf",
+    "sha256": "fb5d00bcd379833ff70306b800750a6206a39be0db342e725bdbbd5564e54525"
+  },
+  {
+    "origem": "Vs 1.1.0/LinkAtletas-main.zip",
+    "destino": "Entregas/Sprint_1/Codigo/LinkAtletas-main.zip",
+    "sha256": "d72cc47a3a06ca43a1e7943d64e44c02588214865fa822f8c7a8e78ea70c20b3"
+  },
+  {
+    "origem": "20.10.2026/Formulario_Acompanhamento_PI_II_20_10_2026.docx (2).pdf",
+    "destino": "Entregas/Sprint_2/Acompanhamento/Formulario_Acompanhamento_PI_II_20_10_2026.docx (2).pdf",
+    "sha256": "7da77b15caaf8bd305af88919f4e8a468cce873052e2d9e3f0cd826f2b33469f"
+  }
+]

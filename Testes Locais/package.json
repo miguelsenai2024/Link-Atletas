@@ -1,0 +1,12 @@
+{
+  "name": "teste-local-cref",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "consultar": "node consultar-auto.mjs",
+    "consultar:assistido": "node consultar.mjs",
+    "test": "node --test",
+    "instalar-navegador": "node instalar-navegador.mjs"
+  },
+  "dependencies": { "playwright": "^1.56.0" }
+}

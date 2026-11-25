@@ -1,0 +1,131 @@
+commit	data_autoria	autor_git	descricao
+77ac846f72ebe6ca8f1c245a4f522c3df038c11f	2026-10-29T05:17:09-03:00	Lucca Castilho	integra as correcoes de seguranca das dependencias
+91b97d6b502033f9973614b6977e26cc9f176830	2026-10-29T03:19:23-03:00	Lucca	preserva o formato original dos patches de dependencias
+ec3f0969ed48ae64c6d306fe94b6ab99ef241215	2026-10-29T03:18:54-03:00	Lucca	corrige dependencias vulneraveis e protege o merge de configuracoes do expo
+e9e16d10481e56802d23fba5631ecb0a0df984e1	2026-10-29T03:02:22-03:00	Lucca Castilho	integra a manutencao das actions com a main protegida
+4ca585bc9f1bc96aa1b73a7efb2bc9085a8ee065	2026-10-29T02:56:03-03:00	Lucca	atualiza as actions para node 24 e reforca o fluxo protegido da main
+185accf7fb31bf4ea2d078aa8f0650f004a8d131	2026-10-29T02:37:29-03:00	Lucca	documenta a operacao e os alertas das tarefas agendadas
+d7c8a2b118f1cd8e803602b8bc87be49b97b2ce2	2026-10-29T02:18:20-03:00	Lucca	isola o ambiente de testes e bloqueia envios e cobrancas reais no preview
+e757ce3fe82119d5d073cd3a13e76cf7fde9f691	2026-10-29T01:44:48-03:00	Lucca	orienta a habilitacao das actions em forks antes da publicacao
+b0f2c11ad9bd272e364bf33edd534915b5fba84c	2026-10-29T01:42:25-03:00	Lucca	documenta a aprovacao da ci antes de liberar a producao
+3751407d12b001372ddf3f29c701827a6cf1b7b0	2026-10-29T01:38:52-03:00	Lucca	prepara a ci para validar a publicacao em producao
+5f15436ce2e794df48d00e34e35c5b45d32bc771	2026-10-29T00:45:21-03:00	Lucca	revisa o repositorio e atualiza a documentacao para a fase atual
+2d814fb7c1c2c2056322bdcc6e00e0e865e8c490	2026-10-29T00:36:41-03:00	Lucca	consolida os workflows android e documenta os modos de verificacao
+ae216b8d833ab22113a6d3ebad3b2fe8853258ec	2026-10-29T00:19:46-03:00	Lucca	mantem apenas a documentacao vigente e organiza as evidencias
+9d62794a8bb84aa77f41de2bab91ebe15b4060d2	2026-10-29T00:02:22-03:00	Lucca	simplifica as pastas de documentos e atualiza as referencias
+094ed35704a4620eb358e217b7ee7b1c5cda22e0	2026-10-28T23:47:34-03:00	Lucca	organiza a documentacao e remove arquivos repetidos e superados
+84f9d29a60513dbeb2349f9fa653d0bea8c815d6	2026-10-28T22:01:23-03:00	Lucca	documenta os arquivos e ambientes da infraestrutura
+0b54cc8b5edcf931e516c2beead81410eb722a8a	2026-10-28T04:35:03-03:00	Lucca	registra ensaios do apk e unifica a atualizacao dos treinos
+af874d15ce4912aae4a45ccd2d1224d5453859c5	2026-10-28T04:11:45-03:00	Lucca	configura oauth por plataforma e gera apk conectado a nuvem
+445c607607a57ea40301dd1c5c0d7a1f0d4e2a86	2026-10-28T03:54:37-03:00	Lucca	integra agenda google nativa e prepara ensaio dos tres perfis
+bccf500761a4467e692643897ac3a89eb65bc940	2026-10-28T03:30:56-03:00	Lucca	amplia o aplicativo para atleta treinador e administrador
+8bfbe9cd70fa3687e834b06ef62f8844dec72a2d	2026-10-28T02:58:00-03:00	Lucca	organiza o aplicativo por funcionalidades e documenta sua estrutura
+04c0b030400390b795f8a3940d0a32f03eac53cd	2026-10-28T02:41:58-03:00	Lucca	organiza a imagem da pagina inicial junto aos recursos da interface
+8d8b73a2e6233824f52533be01adbba16cf8d4de	2026-10-28T02:30:47-03:00	Lucca	docs: registra a versao compativel da cli de publicacao
+c7bf40373c471613e857ea987b4781afed20f917	2026-10-28T02:28:31-03:00	Lucca	corrige a compatibilidade do builder da vercel
+6a9da16d2c80c4bac1cc2c7c30fd2b37a11eabb5	2026-10-28T02:13:01-03:00	Lucca	docs: registra os testes completos da revisao dos scripts
+413cac84dc26ec8cd01bb4b541f5595f55c72e59	2026-10-28T02:06:52-03:00	Lucca	organiza os scripts e corrige protecoes dos utilitarios
+36529739c6d198f056c4240c512dc5de1dc57cbe	2026-10-28T01:55:46-03:00	Lucca	docs: adiciona guias curtos para as areas do servidor
+af8e1eaead60e4878fda008ab3f2b689991bf2af	2026-10-28T01:40:32-03:00	Lucca	docs: confirma o servidor revisado em producao
+084fc378b0eab71956f5e7d70919babb7e01a3eb	2026-10-28T01:33:33-03:00	Lucca	docs: registra os resultados completos da auditoria do servidor
+34a153d8cd5bb08b99da21910a2a8c65cdd3078f	2026-10-28T01:26:31-03:00	Lucca	revisa o servidor organiza modulos e corrige falhas de robustez e elegibilidade
+785b0fa616e5e4be8eaf413e46a5ab3d3aa11f0a	2026-10-28T01:10:56-03:00	Lucca	atualiza contratos compartilhados e remove definicoes duplicadas de cref
+7218d08423259396a7f1c18b2118cf9508b8e55a	2026-10-28T01:07:54-03:00	Lucca	docs: explica os contratos compartilhados e seus consumidores
+91fae70dee4c22073108ae92fb6d04050844fca3	2026-10-28T00:51:44-03:00	Lucca	organiza o frontend por funcionalidade e documenta a pasta src
+2d5e6de4e37ffbd4ad5ddddb17b144c91792aafb	2026-10-28T00:33:13-03:00	Lucca	docs: completa o guia de testes para a equipe e avaliacao
+e5245f734bf0c7df666507f7d265ae8ea6f5e48e	2026-10-27T22:49:42-03:00	Lucca	organiza documentos evidencias e scripts por finalidade
+3df5146f2a701ce555b576faf39a6e0fdf4c73b0	2026-10-27T22:34:15-03:00	Lucca	docs: retira exportacoes antigas do relatorio de testes
+77aa559c0e1f1a2d842f890111a2dab8624f906f	2026-10-27T22:33:30-03:00	Lucca	corrige referencia externa do treino e esclarece o relatorio de testes
+fc9ed739a861c6aa6e53e6142576fa27e422db02	2026-10-27T21:55:32-03:00	Lucca	docs: referencia casos de teste resultados e commits na apresentacao
+de3dcc812e74b3814429c767d3d069940c78aca7	2026-10-27T21:52:55-03:00	Lucca	docs: prepara a apresentacao completa e comprova integracao do banco
+9f98c93a070efd0394abdf958572562488c00257	2026-10-27T21:44:14-03:00	Lucca	docs: detalha a demonstracao dos criterios da sprint 2
+f2f97394620fcc1c38673186fe6f5f11df2a2c86	2026-10-27T21:42:17-03:00	Lucca	docs: organiza a entrega e remove arquivos antigos
+c472f2709d4053dda051d8d4da18fc9bf3096d8a	2026-10-27T03:07:13-03:00	Lucca	registra verificacao das correcoes publicadas em producao
+ee16f107cfd63008ae005c38eff93f80a75b861f	2026-10-27T03:04:27-03:00	Lucca	corrige status profissional e mensagens apos testes manuais
+f48d6f0ba682c72a5120daf16cc330ad63147aa7	2026-10-26T22:41:57-03:00	Lucca	confere links da entrega e atualiza referencias das evidencias
+104bb919c73acd434d5454b724667273cc6628a6	2026-10-26T22:35:57-03:00	Lucca	atualiza checklist da entrega e substitui ers pela versao final da equipe
+0fe9df6e103c3e0004360087134cfb07012d29d7	2026-10-26T21:41:58-03:00	Lucca	corrige ers conforme modelo original do professor
+63523c706be477e0c2e272ba4ecb14963069b976	2026-10-26T21:15:51-03:00	Lucca	detalha as evidencias do roteiro de apresentacao
+d8b235f5032f213c7f4002836cba7230d5aa031d	2026-10-26T21:12:09-03:00	Lucca	adiciona roteiro breve para a apresentacao da sprint 2
+26a9689fcd4ea10bff6a25cf3a6d2a419bcf621e	2026-10-26T21:04:29-03:00	Lucca Castilho	integra a organizacao do repositorio
+4ef904daf27b95a0020a2c1c0d3247a3a4bcc413	2026-10-26T20:29:58-03:00	Lucca	organiza a documentacao e remove arquivos sem uso
+7c1e46af194d72720eca61a2e191388b20f3a41c	2026-10-26T20:12:15-03:00	Lucca	conclui a publicacao e registra os testes de producao
+af3ee6f1fc1038bcbbfeeb367b9a4100b1d76038	2026-10-26T20:05:10-03:00	Lucca Castilho	integra a implantacao na nuvem e as evidencias da sprint 2
+a17707686f76e7f9ad84e9b7fdcf85c48133a744	2026-10-26T20:04:37-03:00	Lucca	registra os testes reais da nuvem e do apk
+98b49045487c29ad9bafd69570d3c7562726f66d	2026-10-26T19:50:45-03:00	Lucca	exporta a api como funcao para o runtime da vercel
+4aaf510d328e3f38d262649e383ecaeb1d8638b4	2026-10-26T19:16:19-03:00	Lucca	libera a inicializacao do servidor no runtime da vercel
+8b15ed6a395d233c8d51442142379e1217678c99	2026-10-26T19:10:19-03:00	Lucca	estabiliza a conferencia do esquema entre bancos migrados
+15caa93613b4e68051e31cbdc6a289bbee5520fe	2026-10-26T19:06:57-03:00	Lucca	corrige dependencias para o runtime da vercel
+90d07048eb611c357c8f72071979c0937f874584	2026-10-26T19:01:15-03:00	Lucca	adapta arquivos grandes e conclui configuracao dos servicos
+2558d2565dd2e989f1c292fd2f1f66d249f110d7	2026-10-26T13:19:20-03:00	Lucca	organiza a conclusao da implantacao na nuvem
+843034834e955be8537c85eb0c320e6cd89dd276	2026-10-26T13:10:35-03:00	Lucca	registra armazenamento privado e testes do tigris
+c9f72776acd464a2e69b2a9d745cb0e84b88d209	2026-10-26T12:44:27-03:00	Lucca	registra testes e conferencia da entrega da sprint 2
+c763c22dad7a20efaa310797cdfa0c3428345d9a	2026-10-24T09:45:32-03:00	Lucca	registra a verificacao da api e as configuracoes pendentes
+283d5d48f18bb346b37359757614a7090932ee9c	2026-10-24T03:31:36-03:00	Lucca	encaminha as rotas da aplicacao para a funcao da vercel
+0fb71b039bfb5ee07fa2ea01924e32214dc4701c	2026-10-24T03:23:24-03:00	Lucca	corrige o empacotamento da vercel com o builder do fastify
+dcf05c0409346d0e47555eee87d914d53a35e65a	2026-10-24T03:06:22-03:00	Lucca	corrige a deteccao do fastify na entrada da vercel
+e1faac879105d47822adfc175e3614c1ab1de836	2026-10-24T02:58:06-03:00	Lucca	prepara a api e as tarefas para implantacao na vercel
+c9192fedb46a5bdf7115d32b953a1d147628bbf4	2026-10-24T02:52:02-03:00	Lucca	registra o plano de implantacao na vercel
+d19cc39070a9b5923972bd8f36116b86c8adb985	2026-10-24T01:54:17-03:00	Lucca	ajusta a estrutura da ers e refaz o word completo
+ad07e88e422f0e8f63816f55a5e1adf785a31f03	2026-10-24T01:09:12-03:00	Lucca	corrige e consolida a ers da sprint 2 no template original
+43150a4b278ccc7dab5d116ea26fcc1d3970a214	2026-10-24T00:36:39-03:00	Lucca	registra a auditoria completa da ers para a sprint 2
+ca0f7498348e342bdf0138d24c81b612f38791d4	2026-10-23T21:29:05-03:00	Lucca	atualiza a ers no template original e consolida o escopo
+384404c2e12d22898aade5a983de54907eaa7076	2026-10-23T20:45:11-03:00	Lucca	atualiza a ers e registra o aceite do cref manual
+fcf123105da9eb974109f3aee1d33f92116338e1	2026-10-23T20:28:43-03:00	Lucca	padroniza a eletiva 1 nos documentos
+7224ca348dd967c4327662954734b7a64b39691f	2026-10-23T20:23:51-03:00	Lucca	completa a matriz com a identificacao da eletiva 1
+7a383264607502ece1ad1930929b98a0c3d40598	2026-10-22T01:35:45-03:00	Lucca	esclarece o escopo e as homologacoes da sprint 2
+756c4315db17aede2f85076eb6c5b05e01b7862e	2026-10-21T15:03:13-03:00	Lucca	registra a publicacao da revisao e a ci aprovada na main
+1e5f8fa41b4fa1a6b9cbb78e720c7ffbf6dddb53	2026-10-21T14:55:53-03:00	Lucca	integra a revisao da sprint 2 e os testes do aplicativo
+928ea4c2744432a2af5943540293148a21343ef8	2026-10-21T14:48:26-03:00	Lucca	consolida a revisao da sprint 2 com o apk testado e as evidencias finais
+23749df54c6fb0830109b10f946d1aeb23c99ff2	2026-10-21T14:37:23-03:00	Lucca	restringe o servidor de desenvolvimento ao acesso local
+628a0315b87e525aa2fd258d6dd8ee34de64301b	2026-10-21T14:35:56-03:00	Lucca	atualiza o vite para corrigir os alertas de seguranca
+ca9d0e92f2a924653f41ad97da7ecb35f8a9f448	2026-10-21T14:32:20-03:00	Lucca	confere a compatibilidade com o sdk fixado e separa a busca de atualizacoes
+12174b875847cb59dc103e9bbf13429a5570591e	2026-10-21T14:23:43-03:00	Lucca	melhora o contraste da pagina inicial e registra a verificacao de acessibilidade
+e639ace1bd1b37bbbe0a15c8cd844e8eb00d0988	2026-10-21T14:18:50-03:00	Lucca	esclarece os exemplos e os limites dos servicos na pagina inicial
+6227a65180b0b50402bba2248f64996424127e80	2026-10-21T14:16:18-03:00	Lucca	corrige a pagina inicial no celular e remove indicadores ficticios
+588071d226c917882a169444da934637b69349d5	2026-10-20T21:42:59-03:00	Lucca	reconhece a confirmacao nativa de encerramento no android
+f44811308c321731c6bd7999acdae8865b785daa	2026-10-20T21:01:53-03:00	Lucca	reaproveita o cache do gradle entre revisoes das ferramentas
+e3393fa3b85afae32842894fc9ba1c67b7470b2e	2026-10-20T20:55:25-03:00	Lucca	corrige o envio de arquivos para o fetch atual do expo
+66cd61addbf360f56632e66b4a0aa06502b36f54	2026-10-20T20:50:11-03:00	Lucca	isola o envio de arquivo para diagnosticar o retorno do seletor
+6b5e49dc7b0c01da1853f972ac34e275917e624c	2026-10-20T20:38:42-03:00	Lucca	revisa os materiais da sprint 2 e registra testes e servicos externos
+93d8d2b1bcec9c796ff548cb12d695ad55ea004a	2026-10-20T20:37:05-03:00	Lucca	integra o formulario de acompanhamento ja publicado
+0288082ec5cc49b062cc4dd4530806c27f5603da	2026-10-20T20:36:11-03:00	Lucca	seleciona o arquivo no android sem abrir a previa
+3e56cac1575e4e5ec047b56e04d4859df31d3d9a	2026-10-20T20:10:09-03:00	Lucca	adiciona o formulario de acompanhamento do projeto integrador
+b931e44d0230f670093056661bc195d51ee5d107	2026-10-20T19:26:34-03:00	Lucca	separa o diagnostico de treino do ensaio android completo
+04a35a5e0b7ad821f6a6ef9e148b688f6eb6431c	2026-10-20T19:26:02-03:00	Lucca	isola o teste de treino e confirma o foco antes de digitar no android
+cd2b0dde1371fdbd7f5591d4529488469f9b9705	2026-10-20T19:20:36-03:00	Lucca	ajusta o tempo do fluxo com tres perfis no webkit do windows
+92813ffada8bc571bcb9a67a090b9cffb8cfd7b9	2026-10-20T19:12:57-03:00	Lucca	estabiliza a navegacao dos testes e aguarda a api ficar pronta
+bd3eceb9217c5676cef9c6838aa538939ea88eb0	2026-10-20T19:04:06-03:00	Lucca	corrige os diagramas e confere a documentacao com o banco real
+d1ed742c07585ab526d7a0f1a176be83683b1a29	2026-10-20T19:01:30-03:00	Lucca	corrige as ferramentas de teste e a busca de campos no android
+f400e649d0654e33b89c886401045716a014f860	2026-10-15T13:59:19-03:00	Lucca	preserva a chave local do backup e confere o preenchimento no android
+1d9c96d08db92723cab86420e932642684398002	2026-10-15T13:56:35-03:00	Lucca	atualiza as dependencias e verifica a protecao dos arquivos publicos
+f1260eeff957dc0f3f212793664db6ccb5e17df0	2026-10-15T13:54:20-03:00	Lucca	aguarda os consentimentos antes de continuar o teste android
+e9f5f0a222be5d800890b7f1cfa848b02b858f4c	2026-10-15T13:39:15-03:00	Lucca	ajusta os gestos do teste para preservar a navegacao do android
+bd0b5dd00887c6a8aaa4b89b93b27b37d2ac5d56	2026-10-15T13:32:17-03:00	Lucca	atualiza o expo e prepara a conexao do aplicativo por usb
+58c53efad98f228005cdc366e228db84ff0c3ebe	2026-10-15T13:19:33-03:00	Lucca	isola a configuracao dos testes e ajusta a navegacao do ensaio
+09f128614e8566cfdb846b4c605eec2ecda8f339	2026-10-15T13:18:08-03:00	Lucca	organiza a execucao e o reaproveitamento dos testes android
+4c043da49015ec59ff56adfa7af48472a3db0672	2026-10-15T13:16:58-03:00	Lucca	prepara o apk local e corrige a limpeza dos arquivos privados
+da5b2400ffac4982888a8f936dbd252c9a3b4c68	2026-10-15T13:03:14-03:00	Lucca	organiza a revisao da sprint 2 e os testes do aplicativo
+c90740b03eaedd088c6f1de487780da2cedd4445	2026-10-15T00:19:51-03:00	Lucca	docs: consolida publicação, provas Android e pendências da entrega
+d7b63c9e905edfefd9ea4d1bcf21a8915a9ed752	2026-10-15T00:12:55-03:00	Lucca	ci: compartilha ferramentas Android entre etapas
+9597869d12dc6e3a41c11b838871823c8920113b	2026-10-15T00:12:16-03:00	Lucca	fix: ignora eventos de conexões de chat já desmontadas
+bbc49d1d18d25f4e3876369dc6ade52c5d044843	2026-10-15T00:10:19-03:00	Lucca	ci: configura variáveis do emulador dentro do runner
+c224deca736878b2ccec44ea1ad933962c87cda6	2026-10-15T00:10:06-03:00	Lucca	ci: usa diretório AVD explícito no ensaio Android
+1418f9bc34764250b9482f459a315641016061e9	2026-10-15T00:05:01-03:00	Lucca	ci: localiza ferramentas Android e limita espera do emulador
+f6a5a56c3b4e68e83ff007b8ac42dac3c9443540	2026-10-14T20:46:40-03:00	Lucca Castilho	Merge pull request #1 from DaviSouza78/evolucao-completa
+d760572fffe7ef63764036f8ec504334eeb90f6a	2026-10-14T20:39:49-03:00	Lucca	ci: prepara ensaio Android e registra APK compilado
+1238b11c437ee0fc62edb03abdab5f26046ec3ed	2026-10-14T20:35:55-03:00	Lucca	fix: cancela consultas obsoletas e isola configuração TLS na CI
+32d836226c58febd1a0b477abf958d8bed0bad28	2026-10-14T20:26:24-03:00	Lucca	ci: verifica publicação e compila APK Android no GitHub
+bd6f857bf853381f71e5843cc08d8aae79112548	2026-10-14T19:11:50-03:00	Lucca	docs: consolida entrega ampliada com UML Word PDF e evidências
+fca8a18f76d15171594a4d7f8654678929b88ecb	2026-10-14T19:09:54-03:00	Lucca	feat: amplia LinkAtletas com comunicação financeiro privacidade e app nativo
+08bf87113f13c779e72c27ae2e8305c0945b62eb	2026-10-14T16:32:19-03:00	Lucca	docs: registra aprovação e plano da ampliação
+c66dc776a0a611be32deb8dd47b0ea03fbcf29a4	2026-10-14T16:25:08-03:00	Lucca	docs: propõe ampliação completa das funcionalidades pendentes
+51463da533be6558faae0a59dbd675d32d74816b	2026-10-14T15:34:13-03:00	Lucca	docs: adiciona checklist verificável dos entregáveis da Sprint 2
+6de0e2dac8868eb3a4db687841e23b1bc3220298	2026-10-14T01:16:14-03:00	Lucca	docs: entrega ERS diagramas backlog API e evidências da Sprint 2
+07940e4ec1e7902a274f9d0977d7c08f7cf4e35d	2026-10-14T01:16:14-03:00	Lucca	feat: implementa fluxo integrado da Sprint 2 com PostgreSQL e testes
+9c1cf691242e804c7de3c46206510fcc2297dc9e	2026-10-14T01:05:31-03:00	Lucca	docs: aprova escopo e plano de implementação da Sprint 2
+17b32c74cc79c1fab05d762cf6346ad87ecc749d	2026-08-17T17:02:33-03:00	miguelsenai2024	Att de desing
+54d282ac8158ae2411930773f889af98228000e8	2026-08-16T20:56:17-03:00	Davi Souza	feat: implement LinkAtletas responsive platform
+13d6e2614c0c811dbd3ae0a4e47ebbf8e409e8b2	2026-08-09T19:51:58-03:00	Miguel oliveira de Almeida	Update README formatting and content consistency
+7ecc1c1f780b65e8977c2d88c35b5d46c02c4698	2026-08-04T00:44:34-03:00	Miguel oliveira de Almeida	Remove payment details and adjust roadmap
+a58e872b90f41b25db478296bba32bd5d4b22f50	2026-08-04T00:42:41-03:00	Miguel oliveira de Almeida	first commit
