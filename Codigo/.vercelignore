@@ -1,0 +1,12 @@
+docs/
+mobile/
+backups/
+.pgdata/
+tmp/
+test-results/
+playwright-report/
+coverage/
+*.local
+.env
+.env.*
+!.env.example

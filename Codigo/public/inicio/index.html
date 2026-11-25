@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LinkAtletas — Seu ritmo. Seu match.</title>
+  <meta name="description" content="Gente que quer evoluir. Gente que sabe orientar. A LinkAtletas conecta atletas a treinadores verificados, do primeiro match ao acompanhamento." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42 42'%3E%3Crect width='42' height='42' rx='10' fill='%23101916'/%3E%3Cpath d='M11 8.5h12.5a7 7 0 0 1 0 14H18M31 33.5H18.5a7 7 0 0 1 0-14H24' fill='none' stroke='%23DFF754' stroke-width='4.8' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,75..125,200..900;1,75..125,200..900&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Poppins:wght@700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="inicio">
+  <!-- Barra global de progresso de scroll (GSAP) -->
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- =========================================================
+       SEÇÃO 1: HERO ENQUADRADO + NAVBAR GLASS FLUTUANTE
+  ========================================================= -->
+  <header class="hero-shell">
+    <div class="hero-frame">
+      <img
+        src="assets/images/hero-athlete.jpg"
+        alt="Atleta correndo em estrada aberta ao amanhecer rumo ao horizonte"
+        class="hero-bg"
+        width="1600"
+        height="1122"
+        fetchpriority="high"
+      />
+      <div class="hero-scrim" aria-hidden="true"></div>
+
+      <!-- Barra de navegação flutuante -->
+      <nav class="nav-pill" aria-label="Navegação principal">
+        <a href="#inicio" class="brand-lockup" aria-label="LinkAtletas — início">
+          <svg class="brand-mark" width="24" height="24" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+            <path d="M11 8.5h12.5a7 7 0 0 1 0 14H18" stroke="#DFF754" stroke-width="5.2" stroke-linecap="round" />
+            <path d="M31 33.5H18.5a7 7 0 0 1 0-14H24" stroke="#DFF754" stroke-width="5.2" stroke-linecap="round" />
+          </svg>
+          <span class="brand-wordmark">Link<span class="brand-accent">Atletas</span></span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#modalidades">Modalidades</a></li>
+          <li><a href="#jornada">Como funciona</a></li>
+          <li><a href="#treinadores">Para treinadores</a></li>
+          <li><a href="#perguntas">Perguntas</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button type="button" class="btn-accent btn-nav" onclick="location.href='../login'">
+            Encontrar treinador
+          </button>
+          <button
+            type="button"
+            class="nav-burger"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+          >
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Menu Mobile -->
+      <div class="mobile-nav" id="mobile-nav" hidden>
+        <a href="#modalidades">Modalidades</a>
+        <a href="#jornada">Como funciona</a>
+        <a href="#treinadores">Para treinadores</a>
+        <a href="#perguntas">Perguntas</a>
+        <button type="button" class="btn-accent" onclick="location.href='../login'">Encontrar treinador</button>
+      </div>
+
+      <!-- Título principal do Hero -->
+      <div class="hero-bottom-row">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="hero-line-one">
+              <svg class="hero-link-glyph" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+                <path d="M11 8.5h12.5a7 7 0 0 1 0 14H18" stroke="#DFF754" stroke-width="5.4" stroke-linecap="round" />
+                <path d="M31 33.5H18.5a7 7 0 0 1 0-14H24" stroke="#DFF754" stroke-width="5.4" stroke-linecap="round" />
+              </svg>
+              <span class="hero-lines-word">Seu ritmo.</span>
+            </span>
+            <span class="hero-line-two">Seu match.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Gente que quer evoluir. Gente que sabe orientar. A LinkAtletas conecta você a treinadores verificados, do primeiro passo ao acompanhamento contínuo.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================
+         SEÇÃO 2: MANIFESTO EDITORIAL (ILUMINAÇÃO PALAVRA A PALAVRA)
+    ========================================================= -->
+    <section class="manifesto container" id="manifesto" data-chapter="manifesto">
+      <h2 class="manifesto-heading" data-word-reveal>
+        Entre o primeiro passo e a próxima conquista, existe um bom encontro — conectamos atletas e treinadores verificados no mesmo fluxo de treino.
+      </h2>
+      <div class="manifesto-cta gs-stagger">
+        <a href="#jornada" class="btn-accent btn-pill">
+          <span>Como funciona</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SEÇÃO 3: FAIXA EXPANSÍVEL DE MODALIDADES (LAYOUT DO VÍDEO)
+    ========================================================= -->
+    <section class="sport-section" id="modalidades" aria-labelledby="sport-section-title" data-chapter="sports">
+      <div class="sport-title container">
+        <h2 id="sport-section-title" class="sport-heading gs-stagger">
+          Não existe um jeito único de <span class="accent-text">ir além.</span>
+        </h2>
+        <p class="sport-subtitle gs-stagger">
+          Tem quem corra. Tem quem pedale.<br />
+          Tem quem esteja começando agora.<br />
+          O ponto em comum? Vontade de evoluir.
+        </p>
+      </div>
+
+      <div class="sport-strip" id="sport-strip">
+        <!-- Painel 1: Corrida (Foto) -->
+        <div class="sport-panel sport-photo gs-panel" data-active="true" data-panel-index="0">
+          <img src="assets/images/mode-corrida.jpg" alt="Atleta largando em bloco de partida em pista de atletismo" width="1600" height="1067" />
+          <button type="button" class="sport-trigger" aria-expanded="true" aria-controls="sport-panel-0" aria-label="Corrida">
+            <span>Corrida</span>
+          </button>
+          <div id="sport-panel-0" class="sport-content">
+            <button type="button" class="sport-link" data-open-match data-sport="Corrida">
+              <span>
+                <small>CORRIDA</small>
+                Mais fôlego.
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Painel 2: Seu ritmo (Mensagem Editorial) -->
+        <div class="sport-panel sport-message sport-message--olive gs-panel" data-active="false" data-panel-index="1">
+          <button type="button" class="sport-trigger" aria-expanded="false" aria-controls="sport-panel-1" aria-label="Seu ritmo">
+            <span>Seu ritmo</span>
+          </button>
+          <div id="sport-panel-1" class="sport-content" hidden>
+            <p class="sport-message__headline">
+              Seu corpo.<br />
+              Sua história.<br />
+              <em>Seu ritmo.</em>
+            </p>
+            <div class="sport-message__note">
+              <svg width="34" height="34" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+                <path d="M11 8.5h12.5a7 7 0 0 1 0 14H18" stroke="#DFF754" stroke-width="4.8" stroke-linecap="round" />
+                <path d="M31 33.5H18.5a7 7 0 0 1 0-14H24" stroke="#DFF754" stroke-width="4.8" stroke-linecap="round" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Painel 3: Força (Foto) -->
+        <div class="sport-panel sport-photo gs-panel" data-active="false" data-panel-index="2">
+          <img src="assets/images/mode-forca.jpg" alt="Atleta em treino de força com anilhas em academia escura" width="1400" height="2099" />
+          <button type="button" class="sport-trigger" aria-expanded="false" aria-controls="sport-panel-2" aria-label="Força">
+            <span>Força</span>
+          </button>
+          <div id="sport-panel-2" class="sport-content" hidden>
+            <button type="button" class="sport-link" data-open-match data-sport="Musculação">
+              <span>
+                <small>FORÇA</small>
+                Mais força.
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Painel 4: Novos caminhos / Ciclismo (Foto) -->
+        <div class="sport-panel sport-photo gs-panel" data-active="false" data-panel-index="3">
+          <img src="assets/images/mode-ciclismo.jpg" alt="Ciclistas de estrada em percurso costeiro aberto" width="1400" height="933" />
+          <button type="button" class="sport-trigger" aria-expanded="false" aria-controls="sport-panel-3" aria-label="Novos caminhos">
+            <span>Novos caminhos</span>
+          </button>
+          <div id="sport-panel-3" class="sport-content" hidden>
+            <button type="button" class="sport-link" data-open-match data-sport="Ciclismo">
+              <span>
+                <small>NOVOS CAMINHOS</small>
+                Mais caminhos.
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Painel 5: Próximo nível (Mensagem Editorial) -->
+        <div class="sport-panel sport-message sport-message--dark gs-panel" data-active="false" data-panel-index="4">
+          <button type="button" class="sport-trigger" aria-expanded="false" aria-controls="sport-panel-4" aria-label="Próximo nível">
+            <span>Próximo nível</span>
+          </button>
+          <div id="sport-panel-4" class="sport-content" hidden>
+            <p class="sport-message__headline">
+              O próximo<br />
+              nível começa<br />
+              <em>com você.</em>
+            </p>
+            <div class="sport-message__note">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SEÇÃO 4: SCROLL EXPAND ("BUILD TO SCALE" — REACT BITS)
+    ========================================================= -->
+    <section class="scroll-expand-section" id="jornada" aria-label="Encontre aqui o seu treinador">
+      <div class="scroll-expand" id="scroll-expand-root">
+        <div class="scroll-expand__track" id="scroll-expand-track">
+          <div class="scroll-expand__stage" id="scroll-expand-stage">
+            <div class="scroll-expand__frame" id="scroll-expand-frame">
+              <img
+                id="scroll-expand-media"
+                class="scroll-expand__media"
+                src="assets/images/journey-track.jpg"
+                alt="Atletas correndo em pista sob iluminação dramática"
+                draggable="false"
+              />
+              <div class="scroll-expand__scrim" id="scroll-expand-scrim"></div>
+
+              <!-- Conteúdo revelado quando expande totalmente -->
+              <div class="scroll-expand__overlay" id="scroll-expand-overlay">
+                <h2 class="scroll-expand__expanded-title">Encontre aqui o seu treinador</h2>
+                <p class="scroll-expand__expanded-sub">
+                  Nossa especialidade é direcionar os melhores treinadores próximos a você para uma consulta direta
+                </p>
+                <div class="scroll-expand__cta">
+                  <button type="button" class="btn-accent btn-pill" data-open-match>
+                    <span>Começar minha busca</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Título inicial exibido sobre a moldura contraída -->
+            <div class="scroll-expand__title" id="scroll-expand-title">
+              <span>Performance é pessoal, o caminho não precisa ser solitário.</span>
+            </div>
+
+            <!-- Dica sutil de rolagem -->
+            <div class="scroll-expand__hint mono-label" id="scroll-expand-hint">
+              ROLE PARA EXPANDIR &darr;
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SEÇÃO 5: PARA TREINADORES — TEXTO GIGANTE COM VARREDURA DE COR
+         (GSAP ScrollTrigger: cinza → lima → branco, letra a letra)
+    ========================================================= -->
+    <section class="statement-section" id="treinadores" data-chapter="coaches" aria-labelledby="statement-title">
+      <div class="container">
+        <p class="mono-label mono-label--accent statement-eyebrow gs-stagger">PARA TREINADORES E ATLETAS</p>
+
+        <h2 class="statement-title" id="statement-title" data-color-sweep>
+          Seu conhecimento chega <em>mais longe</em> com a rotina organizada.
+        </h2>
+
+        <div class="statement-rule" aria-hidden="true"></div>
+
+        <div class="statement-info">
+          <p class="statement-copy">
+            Conecte-se a novos atletas compatíveis com sua especialidade. Publique planos de treino, acompanhe execuções, revise vídeos privados, organize consultorias, agenda e vínculos em um único painel feito para quem orienta.
+          </p>
+
+          <div class="statement-foot">
+            <a href="../login?cadastro=1&perfil=treinador" class="btn-accent btn-pill">
+              <span>Sou treinador</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SEÇÃO 6: FAIXA DE MODALIDADES E RECURSOS (MARQUEE)
+    ========================================================= -->
+    <section class="logos-section" aria-label="Modalidades e recursos integrados" data-chapter="marquee">
+      <div class="logos-marquee gs-stagger">
+        <div class="logos-track">
+          <span class="logo-word logo-word--1">corrida</span>
+          <span class="logo-word logo-word--2">MUSCULAÇÃO</span>
+          <span class="logo-word logo-word--3">Ciclismo</span>
+          <span class="logo-word logo-word--4">TRIATLO</span>
+          <span class="logo-word logo-word--5">Natação</span>
+          <span class="logo-word logo-word--6">CREF VERIFICADO</span>
+          <span class="logo-word logo-word--7">CHAT EM TEMPO REAL</span>
+          <span class="logo-word logo-word--8">Vídeos privados</span>
+          <span class="logo-word logo-word--1" aria-hidden="true">corrida</span>
+          <span class="logo-word logo-word--2" aria-hidden="true">MUSCULAÇÃO</span>
+          <span class="logo-word logo-word--3" aria-hidden="true">Ciclismo</span>
+          <span class="logo-word logo-word--4" aria-hidden="true">TRIATLO</span>
+          <span class="logo-word logo-word--5" aria-hidden="true">Natação</span>
+          <span class="logo-word logo-word--6" aria-hidden="true">CREF VERIFICADO</span>
+          <span class="logo-word logo-word--7" aria-hidden="true">CHAT EM TEMPO REAL</span>
+          <span class="logo-word logo-word--8" aria-hidden="true">Vídeos privados</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SEÇÃO 7: TEXTO FIXO À ESQUERDA + PILARES EM SCROLL SUAVE À DIREITA
+    ========================================================= -->
+    <section class="pillars-section" id="pilares" aria-label="Manifesto e pilares LinkAtletas" data-chapter="pillars">
+      <div class="container pillars-split">
+        <!-- Coluna esquerda fixa -->
+        <div class="pillars-left">
+          <h2 class="pillars-headline" aria-label="Um bom encontro muda o jogo.">
+            <span class="pillars-line" aria-hidden="true"><span>UM BOM</span></span>
+            <span class="pillars-line" aria-hidden="true"><span>ENCONTRO</span></span>
+            <span class="pillars-line" aria-hidden="true"><span>MUDA O</span></span>
+            <span class="pillars-line" aria-hidden="true"><span class="pillars-headline__accent">JOGO.</span></span>
+          </h2>
+          <p class="pillars-lead">
+            Você traz a vontade, a gente abre o caminho para evoluir com direção.
+          </p>
+        </div>
+
+        <!-- Coluna direita: janela com informações passando suavemente no scroll -->
+        <div class="pillars-viewport">
+          <!-- Numeral gigante vazado ao fundo: rola para o número do item em foco -->
+          <div class="pillars-bignum" aria-hidden="true">
+            <div class="pillars-bignum__reel" id="pillars-bignum-reel">
+              <span>01</span><span>02</span><span>03</span>
+            </div>
+          </div>
+          <div class="pillars-stream" id="pillars-stream">
+            <article class="pillar-entry is-focus" data-pillar="0">
+              <h3 class="pillar-entry__title">3 MODOS DE ACOMPANHAMENTO</h3>
+              <p class="pillar-entry__body">
+                Escolha o formato que cabe na sua rotina e ajuste o ritmo quando precisar — do acompanhamento 100% online à orientação presencial, sem ficar preso a um único jeito de treinar.
+              </p>
+            </article>
+
+            <article class="pillar-entry" data-pillar="1">
+              <h3 class="pillar-entry__title">CREF CONFERIDO COM RIGOR</h3>
+              <p class="pillar-entry__body">
+                Todo treinador envia registro profissional e documentação para conferência da equipe antes de aparecer na busca. Confiança construída antes mesmo do primeiro treino.
+              </p>
+            </article>
+
+            <article class="pillar-entry" data-pillar="2">
+              <h3 class="pillar-entry__title">TODA A JORNADA EM 1 LUGAR</h3>
+              <p class="pillar-entry__body">
+                Treinos publicados, feedbacks em tempo real, vídeos privados cifrados de execução e consentimento explícito para dados de saúde convivendo na mesma tela.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================================================
+         SEÇÃO 9: RECURSOS NA PRÁTICA — TRILHO EDITORIAL
+    ========================================================= -->
+    <section class="insights-section" id="recursos" aria-label="Recursos da plataforma LinkAtletas" data-chapter="insights">
+      <div class="container insights-header">
+        <div>
+          <h2 class="insights-title gs-stagger">Boa conexão. Melhor acompanhamento.</h2>
+        </div>
+      </div>
+
+      <!-- React Bits — ScrollStack (port vanilla, scroll da janela) -->
+      <div class="scroll-stack container" id="insights-stack">
+        <div class="scroll-stack__inner">
+          <article class="scroll-stack-card insight-card">
+            <a href="#recursos" class="insight-card__link" data-open-match>
+              <header class="insight-card__head">
+                <h3 class="insight-card__title">
+                  <span class="insight-card__bold">O match certo</span>
+                  <span class="insight-card__thin">para sua modalidade, objetivo e orçamento</span>
+                </h3>
+              </header>
+              <div class="insight-card__media">
+                <img src="assets/images/feat-match.jpg" alt="Pelotão de ciclistas treinando em ritmo coordenado na estrada" loading="lazy" />
+              </div>
+            </a>
+          </article>
+
+          <article class="scroll-stack-card insight-card">
+            <a href="#recursos" class="insight-card__link" data-open-match>
+              <header class="insight-card__head">
+                <h3 class="insight-card__title">
+                  <span class="insight-card__bold">CREF conferido</span>
+                  <span class="insight-card__thin">antes do primeiro treino</span>
+                </h3>
+              </header>
+              <div class="insight-card__media">
+                <img src="assets/images/feat-cref.jpg" alt="Academia estruturada com halteres e acompanhamento profissional" loading="lazy" />
+              </div>
+            </a>
+          </article>
+
+          <article class="scroll-stack-card insight-card">
+            <a href="#recursos" class="insight-card__link" data-open-match>
+              <header class="insight-card__head">
+                <h3 class="insight-card__title">
+                  <span class="insight-card__bold">Treino, vídeo e feedback</span>
+                  <span class="insight-card__thin">no mesmo lugar</span>
+                </h3>
+              </header>
+              <div class="insight-card__media">
+                <img src="assets/images/feat-video.jpg" alt="Atleta posicionando as mãos na barra de treino para execução técnica" loading="lazy" />
+              </div>
+            </a>
+          </article>
+
+          <article class="scroll-stack-card insight-card">
+            <a href="#recursos" class="insight-card__link" data-open-match>
+              <header class="insight-card__head">
+                <h3 class="insight-card__title">
+                  <span class="insight-card__bold">Seus dados</span>
+                  <span class="insight-card__thin">cifrados e sob o seu consentimento</span>
+                </h3>
+              </header>
+              <div class="insight-card__media">
+                <img src="assets/images/feat-privacy.jpg" alt="Atleta em treino de barra fixa em ambiente controlado e reservado" loading="lazy" />
+              </div>
+            </a>
+          </article>
+          <div class="scroll-stack__end" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SEÇÃO 10: FAQ — ANTES DO PRIMEIRO PASSO.
+    ========================================================= -->
+    <section class="faq-section" id="perguntas" aria-label="Perguntas frequentes" data-chapter="faq">
+      <div class="faq-grid">
+        <div class="faq-heading-col gs-stagger">
+          <p class="faq-eyebrow">FAQ</p>
+          <h2 class="faq-title">Antes do<br />primeiro passo.</h2>
+          <p class="faq-note">Boas perguntas também fazem parte do caminho.</p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item gs-faq">
+            <summary class="faq-summary">
+              <span class="faq-question">Preciso ser atleta profissional?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <div class="faq-answer__inner"><p>Não. A LinkAtletas atende desde quem está começando até quem busca melhorar a performance. Seu perfil ajuda a encontrar o acompanhamento adequado ao seu momento.</p></div>
+            </div>
+          </details>
+
+          <details class="faq-item gs-faq">
+            <summary class="faq-summary">
+              <span class="faq-question">Como encontro o treinador certo?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <div class="faq-answer__inner"><p>Você informa modalidade, nível, objetivo, orçamento e disponibilidade. A plataforma usa esses critérios para mostrar profissionais compatíveis, com perfis e avaliações para você comparar.</p></div>
+            </div>
+          </details>
+
+          <details class="faq-item gs-faq">
+            <summary class="faq-summary">
+              <span class="faq-question">Como os profissionais são verificados?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <div class="faq-answer__inner"><p>O cadastro de treinador exige CREF e documentação. A equipe administrativa confere os dados antes de liberar o perfil na busca.</p></div>
+            </div>
+          </details>
+
+          <details class="faq-item gs-faq">
+            <summary class="faq-summary">
+              <span class="faq-question">Posso treinar com acompanhamento online?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <div class="faq-answer__inner"><p>Sim. Você pode buscar atendimento online, presencial ou híbrido, conforme a disponibilidade de cada profissional.</p></div>
+            </div>
+          </details>
+
+          <details class="faq-item gs-faq">
+            <summary class="faq-summary">
+              <span class="faq-question">Como funciona o acompanhamento?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <div class="faq-answer__inner"><p>Seu treinador publica o plano na plataforma. Você registra os treinos, compartilha feedbacks e pode enviar vídeos de execução para receber orientações.</p></div>
+            </div>
+          </details>
+
+          <details class="faq-item gs-faq">
+            <summary class="faq-summary">
+              <span class="faq-question">Quem pode ver meus vídeos e dados?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <div class="faq-answer__inner"><p>Os arquivos de acompanhamento são privados e restritos às pessoas do vínculo. Dados de performance e saúde exigem consentimento específico, gerenciado na área de Privacidade.</p></div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SEÇÃO 11: LETREIRO VAZADO GIGANTE
+    ========================================================= -->
+    <section class="giant-marquee" aria-hidden="true" data-chapter="giant">
+      <div class="giant-marquee__track">
+        <span class="giant-dot"></span>
+        <span class="giant-word">Corrida</span>
+        <span class="giant-dot"></span>
+        <span class="giant-word">Força</span>
+        <span class="giant-dot"></span>
+        <span class="giant-word">Ciclismo</span>
+        <span class="giant-dot"></span>
+        <span class="giant-word">Triatlo</span>
+        <span class="giant-dot"></span>
+        <span class="giant-word">Corrida</span>
+        <span class="giant-dot"></span>
+        <span class="giant-word">Força</span>
+        <span class="giant-dot"></span>
+        <span class="giant-word">Ciclismo</span>
+        <span class="giant-dot"></span>
+        <span class="giant-word">Triatlo</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       SEÇÃO 12: RODAPÉ EDITORIAL FULL-BLEED (CTA + NAVEGAÇÃO)
+  ========================================================= -->
+  <footer class="site-footer" data-chapter="footer">
+    <div class="footer-cta">
+      <h2 class="footer-cta__title">
+        <span class="footer-cta__line-bold">PRONTO PARA</span>
+        <span class="footer-cta__line-thin">ENTRAR EM MOVIMENTO?</span>
+      </h2>
+      <p class="footer-cta__sub">
+        Você traz a vontade. A gente conecta você ao treinador certo.
+      </p>
+      <button type="button" class="footer-cta__btn" data-open-match>
+        <span class="footer-cta__btn-label">Encontrar meu treinador</span>
+      </button>
+    </div>
+
+    <div class="footer-lower">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#inicio" class="footer-wordmark" aria-label="LinkAtletas — voltar ao início">
+            <svg class="footer-wordmark__mark" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+              <path d="M11 8.5h12.5a7 7 0 0 1 0 14H18" stroke="#DFF754" stroke-width="5.2" stroke-linecap="round" />
+              <path d="M31 33.5H18.5a7 7 0 0 1 0-14H24" stroke="#DFF754" stroke-width="5.2" stroke-linecap="round" />
+            </svg>
+            <span class="footer-wordmark__text">Link<span class="brand-accent">Atletas</span></span>
+          </a>
+          <p class="footer-address">
+            Plataforma web e aplicativo do atleta para conectar objetivos reais a treinadores com CREF conferido.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col__title">MODALIDADES</h3>
+          <ul>
+            <li><a href="#modalidades">Corrida</a></li>
+            <li><a href="#modalidades">Musculação e Força</a></li>
+            <li><a href="#modalidades">Ciclismo</a></li>
+            <li><a href="#modalidades">Triatlo e Natação</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col__title">PLATAFORMA</h3>
+          <ul>
+            <li><a href="#jornada">Como funciona</a></li>
+            <li><a href="#treinadores">Para treinadores</a></li>
+            <li><a href="#recursos">Recursos e privacidade</a></li>
+            <li><a href="#perguntas">Perguntas frequentes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col__title">ACESSO</h3>
+          <ul>
+            <li><a href="../login">Entrar na plataforma &nearr;</a></li>
+            <li><a href="../login?cadastro=1&perfil=treinador">Cadastrar como treinador</a></li>
+            <li><button type="button" class="footer-link-btn" data-open-match>Encontrar treinador</button></li>
+          </ul>
+        </div>
+
+        <a href="#inicio" class="footer-top-btn" aria-label="Voltar ao início">
+          <span aria-hidden="true">&uarr;</span>
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 LinkAtletas</p>
+        <div class="footer-legal">
+          <a href="#perguntas">Privacidade</a>
+          <a href="#perguntas">Verificação CREF</a>
+          <a href="../login">Entrar</a>
+        </div>
+        <p class="footer-signature">Movimento em comum.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================
+       MODAL INTERATIVO — PRÉVIA DO SEU MATCH LINKATLETAS
+  ========================================================= -->
+  <dialog class="match-modal" id="match-modal" aria-labelledby="match-modal-title">
+    <div class="match-card">
+      <div class="match-head">
+        <div>
+          <p class="mono-label mono-label--accent">PRÉVIA DE JORNADA &middot; 3 RESPOSTAS</p>
+          <h2 id="match-modal-title" class="match-title">Que tal encontrar o seu caminho?</h2>
+        </div>
+        <button type="button" class="icon-circle" id="match-close" aria-label="Fechar janela">&times;</button>
+      </div>
+
+      <form id="match-form" class="match-form">
+        <label class="form-field">
+          <span class="mono-label">O QUE TE COLOCA EM MOVIMENTO?</span>
+          <select name="sport" id="match-sport" required>
+            <option value="">Escolha sua modalidade</option>
+            <option value="Corrida">Corrida</option>
+            <option value="Musculação">Musculação</option>
+            <option value="Ciclismo">Ciclismo</option>
+            <option value="Triatlo">Triatlo</option>
+            <option value="Outra modalidade">Outra modalidade</option>
+          </select>
+        </label>
+
+        <div class="form-row">
+          <label class="form-field">
+            <span class="mono-label">QUAL É O SEU MOMENTO?</span>
+            <select name="goal" id="match-goal" required>
+              <option value="">Conte seu objetivo</option>
+              <option value="começar">Quero começar</option>
+              <option value="constância">Busco mais constância</option>
+              <option value="performance">Quero melhorar minha performance</option>
+            </select>
+          </label>
+
+          <label class="form-field">
+            <span class="mono-label">COMO PREFERE TREINAR?</span>
+            <select name="format" id="match-format" required>
+              <option value="">Escolha o formato</option>
+              <option value="Online">Online</option>
+              <option value="Presencial">Presencial</option>
+              <option value="Híbrido">Híbrido</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="match-result" id="match-result" role="status" hidden>
+          <p class="mono-label mono-label--accent">SEU PRÓXIMO PASSO JÁ TEM DIREÇÃO</p>
+          <p class="match-result__copy" id="match-result-copy"></p>
+          <div class="match-result__footer">
+            <a href="../login?cadastro=1&perfil=atleta" class="btn-accent btn-pill">
+              <span>Criar meu perfil na LinkAtletas</span>
+              <span class="btn-arrow" aria-hidden="true">&nearr;</span>
+            </a>
+            <small class="mono-label">A busca de profissionais acontece na plataforma, após o cadastro.</small>
+          </div>
+        </div>
+
+        <div class="match-actions">
+          <span class="mono-label">ORIENTAÇÃO LOCAL &middot; SEM CADASTRO PRÉVIO</span>
+          <button type="submit" class="btn-accent btn-pill">
+            <span>Descobrir meu próximo passo</span>
+            <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <!-- GSAP + ScrollTrigger (CDN oficial) -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
